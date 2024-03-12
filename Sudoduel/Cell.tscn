@@ -1,0 +1,162 @@
+[gd_scene load_steps=6 format=3 uid="uid://cebj8j3yeucio"]
+
+[ext_resource type="Script" path="res://cell.gd" id="1_0e518"]
+[ext_resource type="SystemFont" uid="uid://bqybaqiuj8int" path="res://blurred_font.tres" id="1_7ed5y"]
+[ext_resource type="StyleBox" uid="uid://q5bjttqhgmvo" path="res://Red_normal.tres" id="2_hhade"]
+[ext_resource type="StyleBox" uid="uid://d1p6uwyavbhve" path="res://Red_pressed.tres" id="3_p4wkc"]
+[ext_resource type="StyleBox" uid="uid://mpknt400ryry" path="res://red_disabled.tres" id="4_sqaut"]
+
+[node name="Cell" type="Button"]
+offset_right = 70.0
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource("1_7ed5y")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("2_hhade")
+theme_override_styles/pressed = ExtResource("3_p4wkc")
+theme_override_styles/disabled = ExtResource("4_sqaut")
+script = ExtResource("1_0e518")
+
+[node name="Jotting 1" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 6.0
+offset_top = -0.5
+offset_right = 14.0
+offset_bottom = 20.5
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "1
+"
+
+[node name="Jotting 2" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 31.0
+offset_top = -0.5
+offset_right = 39.0
+offset_bottom = 20.5
+grow_horizontal = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "2"
+
+[node name="Jotting 3" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 56.0
+offset_top = -0.5
+offset_right = 64.0
+offset_bottom = 20.5
+grow_horizontal = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "3
+"
+horizontal_alignment = 2
+
+[node name="Jotting 4" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 6.0
+offset_top = 24.5
+offset_right = 14.0
+offset_bottom = 45.5
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "4
+"
+vertical_alignment = 1
+
+[node name="Jotting 5" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 31.0
+offset_top = 24.5
+offset_right = 39.0
+offset_bottom = 45.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "5
+"
+horizontal_alignment = 1
+
+[node name="Jotting 6" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 56.0
+offset_top = 24.5
+offset_right = 64.0
+offset_bottom = 45.5
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "6"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Jotting 7" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 6.0
+offset_top = 49.5
+offset_right = 14.0
+offset_bottom = 70.5
+grow_vertical = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "7
+"
+vertical_alignment = 2
+
+[node name="Jotting 8" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 31.0
+offset_top = 49.5
+offset_right = 39.0
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "8
+"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Jotting 9" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 56.0
+offset_top = 49.5
+offset_right = 64.0
+offset_bottom = 70.5
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.752941, 0.552941, 0.223529, 1)
+theme_override_font_sizes/font_size = 13
+text = "9"
+horizontal_alignment = 2
+vertical_alignment = 1

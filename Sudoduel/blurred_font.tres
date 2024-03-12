@@ -1,0 +1,5 @@
+[gd_resource type="SystemFont" format=3 uid="uid://bqybaqiuj8int"]
+
+[resource]
+font_names = PackedStringArray("Broadway")
+oversampling = 0.2

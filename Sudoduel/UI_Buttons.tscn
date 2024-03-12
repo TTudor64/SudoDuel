@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://bj3wq8ddk4h7s"]
+
+[ext_resource type="Script" path="res://UI_Buttons.gd" id="1_6tc61"]
+[ext_resource type="StyleBox" uid="uid://cbuiyubcjrc13" path="res://UI Button Colors.tres" id="2_6nb3h"]
+[ext_resource type="Texture2D" uid="uid://dlemq317cqrvc" path="res://rotate-19-64.png" id="3_kmnw4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spg81"]
+bg_color = Color(0.192157, 0.27451, 0.352941, 1)
+
+[node name="UI_Buttons" type="VBoxContainer"]
+offset_right = 400.0
+offset_bottom = 400.0
+size_flags_stretch_ratio = 0.0
+script = ExtResource("1_6tc61")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_spg81")
+text = "Result: "
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+
+[node name="Solve" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = ExtResource("2_6nb3h")
+text = "Solve"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 2
+text = "
+"
+
+[node name="New_Game" type="Button" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = ExtResource("2_6nb3h")
+text = "New Game"
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 2
+text = "
+"
+
+[node name="Rotate" type="Button" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = ExtResource("2_6nb3h")
+icon = ExtResource("3_kmnw4")

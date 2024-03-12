@@ -1,0 +1,862 @@
+[gd_scene load_steps=6 format=3 uid="uid://cnn5v51mltgvo"]
+
+[ext_resource type="Shader" path="res://blur.gdshader" id="1_7qaq2"]
+[ext_resource type="Script" path="res://player.gd" id="1_pn5se"]
+[ext_resource type="PackedScene" uid="uid://cebj8j3yeucio" path="res://Cell.tscn" id="2_67xl0"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_5ryqd"]
+properties/0/path = NodePath("GridContainer/Cell 1:text")
+properties/0/spawn = true
+properties/0/sync = true
+properties/0/watch = false
+properties/1/path = NodePath("GridContainer/Cell 2:text")
+properties/1/spawn = true
+properties/1/sync = true
+properties/1/watch = false
+properties/2/path = NodePath("GridContainer/Cell 3:text")
+properties/2/spawn = true
+properties/2/sync = true
+properties/2/watch = false
+properties/3/path = NodePath("GridContainer/Cell 4:text")
+properties/3/spawn = true
+properties/3/sync = true
+properties/3/watch = false
+properties/4/path = NodePath("GridContainer/Cell 5:text")
+properties/4/spawn = true
+properties/4/sync = true
+properties/4/watch = false
+properties/5/path = NodePath("GridContainer/Cell 6:text")
+properties/5/spawn = true
+properties/5/sync = true
+properties/5/watch = false
+properties/6/path = NodePath("GridContainer/Cell 7:text")
+properties/6/spawn = true
+properties/6/sync = true
+properties/6/watch = false
+properties/7/path = NodePath("GridContainer/Cell 8:text")
+properties/7/spawn = true
+properties/7/sync = true
+properties/7/watch = false
+properties/8/path = NodePath("GridContainer/Cell 9:text")
+properties/8/spawn = true
+properties/8/sync = true
+properties/8/watch = false
+properties/9/path = NodePath("GridContainer/Cell 10:text")
+properties/9/spawn = true
+properties/9/sync = true
+properties/9/watch = false
+properties/10/path = NodePath("GridContainer/Cell 11:text")
+properties/10/spawn = true
+properties/10/sync = true
+properties/10/watch = false
+properties/11/path = NodePath("GridContainer/Cell 12:text")
+properties/11/spawn = true
+properties/11/sync = true
+properties/11/watch = false
+properties/12/path = NodePath("GridContainer/Cell 13:text")
+properties/12/spawn = true
+properties/12/sync = true
+properties/12/watch = false
+properties/13/path = NodePath("GridContainer/Cell 14:text")
+properties/13/spawn = true
+properties/13/sync = true
+properties/13/watch = false
+properties/14/path = NodePath("GridContainer/Cell 15:text")
+properties/14/spawn = true
+properties/14/sync = true
+properties/14/watch = false
+properties/15/path = NodePath("GridContainer/Cell 16:text")
+properties/15/spawn = true
+properties/15/sync = true
+properties/15/watch = false
+properties/16/path = NodePath("GridContainer/Cell 17:text")
+properties/16/spawn = true
+properties/16/sync = true
+properties/16/watch = false
+properties/17/path = NodePath("GridContainer/Cell 18:text")
+properties/17/spawn = true
+properties/17/sync = true
+properties/17/watch = false
+properties/18/path = NodePath("GridContainer/Cell 19:text")
+properties/18/spawn = true
+properties/18/sync = true
+properties/18/watch = false
+properties/19/path = NodePath("GridContainer/Cell 20:text")
+properties/19/spawn = true
+properties/19/sync = true
+properties/19/watch = false
+properties/20/path = NodePath("GridContainer/Cell 21:text")
+properties/20/spawn = true
+properties/20/sync = true
+properties/20/watch = false
+properties/21/path = NodePath("GridContainer/Cell 22:text")
+properties/21/spawn = true
+properties/21/sync = true
+properties/21/watch = false
+properties/22/path = NodePath("GridContainer/Cell 23:text")
+properties/22/spawn = true
+properties/22/sync = true
+properties/22/watch = false
+properties/23/path = NodePath("GridContainer/Cell 24:text")
+properties/23/spawn = true
+properties/23/sync = true
+properties/23/watch = false
+properties/24/path = NodePath("GridContainer/Cell 25:text")
+properties/24/spawn = true
+properties/24/sync = true
+properties/24/watch = false
+properties/25/path = NodePath("GridContainer/Cell 26:text")
+properties/25/spawn = true
+properties/25/sync = true
+properties/25/watch = false
+properties/26/path = NodePath("GridContainer/Cell 27:text")
+properties/26/spawn = true
+properties/26/sync = true
+properties/26/watch = false
+properties/27/path = NodePath("GridContainer/Cell 28:text")
+properties/27/spawn = true
+properties/27/sync = true
+properties/27/watch = false
+properties/28/path = NodePath("GridContainer/Cell 29:text")
+properties/28/spawn = true
+properties/28/sync = true
+properties/28/watch = false
+properties/29/path = NodePath("GridContainer/Cell 30:text")
+properties/29/spawn = true
+properties/29/sync = true
+properties/29/watch = false
+properties/30/path = NodePath("GridContainer/Cell 31:text")
+properties/30/spawn = true
+properties/30/sync = true
+properties/30/watch = false
+properties/31/path = NodePath("GridContainer/Cell 32:text")
+properties/31/spawn = true
+properties/31/sync = true
+properties/31/watch = false
+properties/32/path = NodePath("GridContainer/Cell 33:text")
+properties/32/spawn = true
+properties/32/sync = true
+properties/32/watch = false
+properties/33/path = NodePath("GridContainer/Cell 34:text")
+properties/33/spawn = true
+properties/33/sync = true
+properties/33/watch = false
+properties/34/path = NodePath("GridContainer/Cell 35:text")
+properties/34/spawn = true
+properties/34/sync = true
+properties/34/watch = false
+properties/35/path = NodePath("GridContainer/Cell 36:text")
+properties/35/spawn = true
+properties/35/sync = true
+properties/35/watch = false
+properties/36/path = NodePath("GridContainer/Cell 37:text")
+properties/36/spawn = true
+properties/36/sync = true
+properties/36/watch = false
+properties/37/path = NodePath("GridContainer/Cell 38:text")
+properties/37/spawn = true
+properties/37/sync = true
+properties/37/watch = false
+properties/38/path = NodePath("GridContainer/Cell 39:text")
+properties/38/spawn = true
+properties/38/sync = true
+properties/38/watch = false
+properties/39/path = NodePath("GridContainer/Cell 40:text")
+properties/39/spawn = true
+properties/39/sync = true
+properties/39/watch = false
+properties/40/path = NodePath("GridContainer/Cell 41:text")
+properties/40/spawn = true
+properties/40/sync = true
+properties/40/watch = false
+properties/41/path = NodePath("GridContainer/Cell 42:text")
+properties/41/spawn = true
+properties/41/sync = true
+properties/41/watch = false
+properties/42/path = NodePath("GridContainer/Cell 43:text")
+properties/42/spawn = true
+properties/42/sync = true
+properties/42/watch = false
+properties/43/path = NodePath("GridContainer/Cell 44:text")
+properties/43/spawn = true
+properties/43/sync = true
+properties/43/watch = false
+properties/44/path = NodePath("GridContainer/Cell 45:text")
+properties/44/spawn = true
+properties/44/sync = true
+properties/44/watch = false
+properties/45/path = NodePath("GridContainer/Cell 46:text")
+properties/45/spawn = true
+properties/45/sync = true
+properties/45/watch = false
+properties/46/path = NodePath("GridContainer/Cell 47:text")
+properties/46/spawn = true
+properties/46/sync = true
+properties/46/watch = false
+properties/47/path = NodePath("GridContainer/Cell 48:text")
+properties/47/spawn = true
+properties/47/sync = true
+properties/47/watch = false
+properties/48/path = NodePath("GridContainer/Cell 49:text")
+properties/48/spawn = true
+properties/48/sync = true
+properties/48/watch = false
+properties/49/path = NodePath("GridContainer/Cell 50:text")
+properties/49/spawn = true
+properties/49/sync = true
+properties/49/watch = false
+properties/50/path = NodePath("GridContainer/Cell 51:text")
+properties/50/spawn = true
+properties/50/sync = true
+properties/50/watch = false
+properties/51/path = NodePath("GridContainer/Cell 52:text")
+properties/51/spawn = true
+properties/51/sync = true
+properties/51/watch = false
+properties/52/path = NodePath("GridContainer/Cell 53:text")
+properties/52/spawn = true
+properties/52/sync = true
+properties/52/watch = false
+properties/53/path = NodePath("GridContainer/Cell 54:text")
+properties/53/spawn = true
+properties/53/sync = true
+properties/53/watch = false
+properties/54/path = NodePath("GridContainer/Cell 55:text")
+properties/54/spawn = true
+properties/54/sync = true
+properties/54/watch = false
+properties/55/path = NodePath("GridContainer/Cell 56:text")
+properties/55/spawn = true
+properties/55/sync = true
+properties/55/watch = false
+properties/56/path = NodePath("GridContainer/Cell 57:text")
+properties/56/spawn = true
+properties/56/sync = true
+properties/56/watch = false
+properties/57/path = NodePath("GridContainer/Cell 58:text")
+properties/57/spawn = true
+properties/57/sync = true
+properties/57/watch = false
+properties/58/path = NodePath("GridContainer/Cell 59:text")
+properties/58/spawn = true
+properties/58/sync = true
+properties/58/watch = false
+properties/59/path = NodePath("GridContainer/Cell 60:text")
+properties/59/spawn = true
+properties/59/sync = true
+properties/59/watch = false
+properties/60/path = NodePath("GridContainer/Cell 61:text")
+properties/60/spawn = true
+properties/60/sync = true
+properties/60/watch = false
+properties/61/path = NodePath("GridContainer/Cell 62:text")
+properties/61/spawn = true
+properties/61/sync = true
+properties/61/watch = false
+properties/62/path = NodePath("GridContainer/Cell 63:text")
+properties/62/spawn = true
+properties/62/sync = true
+properties/62/watch = false
+properties/63/path = NodePath("GridContainer/Cell 64:text")
+properties/63/spawn = true
+properties/63/sync = true
+properties/63/watch = false
+properties/64/path = NodePath("GridContainer/Cell 65:text")
+properties/64/spawn = true
+properties/64/sync = true
+properties/64/watch = false
+properties/65/path = NodePath("GridContainer/Cell 66:text")
+properties/65/spawn = true
+properties/65/sync = true
+properties/65/watch = false
+properties/66/path = NodePath("GridContainer/Cell 67:text")
+properties/66/spawn = true
+properties/66/sync = true
+properties/66/watch = false
+properties/67/path = NodePath("GridContainer/Cell 68:text")
+properties/67/spawn = true
+properties/67/sync = true
+properties/67/watch = false
+properties/68/path = NodePath("GridContainer/Cell 69:text")
+properties/68/spawn = true
+properties/68/sync = true
+properties/68/watch = false
+properties/69/path = NodePath("GridContainer/Cell 70:text")
+properties/69/spawn = true
+properties/69/sync = true
+properties/69/watch = false
+properties/70/path = NodePath("GridContainer/Cell 71:text")
+properties/70/spawn = true
+properties/70/sync = true
+properties/70/watch = false
+properties/71/path = NodePath("GridContainer/Cell 72:text")
+properties/71/spawn = true
+properties/71/sync = true
+properties/71/watch = false
+properties/72/path = NodePath("GridContainer/Cell 73:text")
+properties/72/spawn = true
+properties/72/sync = true
+properties/72/watch = false
+properties/73/path = NodePath("GridContainer/Cell 74:text")
+properties/73/spawn = true
+properties/73/sync = true
+properties/73/watch = false
+properties/74/path = NodePath("GridContainer/Cell 75:text")
+properties/74/spawn = true
+properties/74/sync = true
+properties/74/watch = false
+properties/75/path = NodePath("GridContainer/Cell 76:text")
+properties/75/spawn = true
+properties/75/sync = true
+properties/75/watch = false
+properties/76/path = NodePath("GridContainer/Cell 77:text")
+properties/76/spawn = true
+properties/76/sync = true
+properties/76/watch = false
+properties/77/path = NodePath("GridContainer/Cell 78:text")
+properties/77/spawn = true
+properties/77/sync = true
+properties/77/watch = false
+properties/78/path = NodePath("GridContainer/Cell 79:text")
+properties/78/spawn = true
+properties/78/sync = true
+properties/78/watch = false
+properties/79/path = NodePath("GridContainer/Cell 80:text")
+properties/79/spawn = true
+properties/79/sync = true
+properties/79/watch = false
+properties/80/path = NodePath("GridContainer/Cell 81:text")
+properties/80/spawn = true
+properties/80/sync = true
+properties/80/watch = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kgbdi"]
+shader = ExtResource("1_7qaq2")
+shader_parameter/strength = 2
+
+[node name="Blue Grid" type="Node2D" groups=["PlayerGrid"]]
+position = Vector2(543, 503)
+script = ExtResource("1_pn5se")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_interval = 0.1
+replication_config = SubResource("SceneReplicationConfig_5ryqd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -111.0
+offset_top = -327.0
+offset_right = -106.0
+offset_bottom = 321.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 107.0
+offset_top = -327.0
+offset_right = 112.0
+offset_bottom = 321.0
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = -326.0
+offset_top = 107.0
+offset_right = 324.0
+offset_bottom = 111.0
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = -326.0
+offset_top = -112.0
+offset_right = 324.0
+offset_bottom = -108.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+material = SubResource("ShaderMaterial_kgbdi")
+offset_left = -326.0
+offset_top = -327.0
+offset_right = 324.0
+offset_bottom = 323.0
+size_flags_horizontal = 3
+columns = 9
+
+[node name="Cell 1" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 2" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 3" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 4" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 5" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 6" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 7" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 8" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 9" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 10" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 11" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 12" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 13" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 14" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 15" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 16" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 17" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 18" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 19" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 20" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 21" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 22" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 23" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 24" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 25" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 26" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 27" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 28" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 29" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 30" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 31" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 32" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 33" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 34" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 35" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 36" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 37" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 38" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 39" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 40" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 41" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 42" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 43" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 44" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 45" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 46" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 47" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 48" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 49" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 50" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 51" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 52" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 53" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 54" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 55" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 56" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 57" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 58" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 59" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 60" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 61" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 62" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 63" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 64" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 65" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 66" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 67" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 68" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 69" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 70" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 71" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 72" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 73" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 74" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 75" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 76" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 77" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 78" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 79" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 80" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
+
+[node name="Cell 81" parent="GridContainer" instance=ExtResource("2_67xl0")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.95
